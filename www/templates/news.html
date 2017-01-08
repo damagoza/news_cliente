@@ -1,0 +1,21 @@
+<ion-content scroll="false">  
+	<div class="bar bar-header">
+      <div class="button ion-arrow-left-a" ng-click="changeState(4)">
+    	
+      </div>    		
+	  <h1 class="title">News</h1>
+      <div class="button" ng-click="logout()">
+    	Logut
+      </div>    
+	</div>
+</ion-content >
+<ion-content scroll="true"> 
+	<div class="content has-header">
+		<div class="card" ng-repeat="information in news">
+		  <div class="item item-text-wrap" ng-click="">
+		    <h4>{{information.title}}</h4>
+		    <h4>{{information.content}}</h4>
+		  </div>
+		</div>		
+	</div>		 
+</ion-content>

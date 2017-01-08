@@ -1,0 +1,17 @@
+<ion-content scroll="false">  
+	<div class="bar bar-header">
+	  <h1 class="title">News</h1>
+      <div class="button" ng-click="logout()">
+    	Logut
+      </div>    
+	</div>
+</ion-content >
+<ion-content scroll="true"> 
+	<div class="content has-header">
+		<div class="card" ng-repeat="category in categories">
+		  <div class="item item-text-wrap" ng-click="news(1, category.id)">
+		    {{category.name}}
+		  </div>
+		</div>		
+	</div>		 
+</ion-content>

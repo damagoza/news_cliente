@@ -1,0 +1,25 @@
+<ion-content has-header="true" padding="true">
+  <div class="center">
+    <div class="list list-inset">      
+      <label class="item item-input">
+        <input type="email" placeholder="E-mail" ng-model="email">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Password" ng-model="password">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Repeat your password" ng-model="repeatPassword">
+      </label>      
+    </div>
+    <div class="button button-block button-positive" ng-click="signup(user_name, email, password, repeatPassword)">
+      Sign up
+    </div> 
+    <p>
+    <div class="button button-block button-stable" ng-click="changeState(1)">
+      Log in
+    </div>        
+    <div class="button button-clear button-dark" ng-click="changeState(3)">
+      Remember my password
+    </div>        
+  </div>
+</ion-content>
