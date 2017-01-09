@@ -49,7 +49,7 @@ angular.module('starter', ['ionic', 'starter.category', 'starter.inicio', 'start
       console.log("news " +  url_news);
       $http.post(url_news, params).success(function(data){
         $rootScope.news_extract = data;
-        // console.log("datos --> " + data)
+        console.log("datos --> " + data)
         NavigationFactory.navigation(5);
       })
       .error(function(data){

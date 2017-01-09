@@ -2,6 +2,7 @@ var news = angular.module('starter.news', []);
 
 news.controller("NewsCtrl",['$scope', 'NavigationFactory', '$http', 'url_api', '$rootScope', '$rootScope', function($scope, NavigationFactory, $http, url_api, $rootScope, $rootScope){  
   $scope.news = $rootScope.news_extract;
+  console.log($scope.news) 
   console.log('NewsCtrl');
   $scope.changeState = function(estado){
     NavigationFactory.navigation(estado);

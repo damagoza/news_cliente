@@ -13,6 +13,11 @@
 	<div class="content has-header">
 		<div class="card" ng-repeat="information in news">
 		  <div class="item item-text-wrap" ng-click="">
+			<a class="item item-thumbnail-left" href="{{information.image}}" ng-if="information.image != ''">
+		      <img src="{{information.image}}">
+		      <h2>Pretty Hate Machine</h2>
+		      <p>Nine Inch Nails</p>
+		    </a>		  	
 		    <h4>{{information.title}}</h4>
 		    <h4>{{information.content}}</h4>
 		  </div>
